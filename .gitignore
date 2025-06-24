@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+/dist
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.pem
+
+# jalali x
+/index.d.ts
+/index.js
+/index.types.d.ts
+/index.types.js
