@@ -1,4 +1,4 @@
-# @jalalix/mui
+# JalaliX
 
 Jalali (Persian/Shamsi) adapter for [MUI X Date Pickers](https://mui.com/x/react-date-pickers/), powered by [`@jalalix/typescript`](https://www.npmjs.com/package/@jalalix/typescript).
 
