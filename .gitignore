@@ -8,6 +8,8 @@
 *.pem
 
 # jalali x
+/AdapterJalaliX.d.ts
+/AdapterJalaliX.js
 /index.d.ts
 /index.js
 /index.types.d.ts

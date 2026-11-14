@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"module": "index.js",
 	"types": "index.d.ts",
-	"description": "",
+	"description": "Jalali adapter for MUI X Date Pickers using @jalalix/typescript",
 	"author": "Hossein Maklavani <hos.mohamadi@gmail.com> (https://maklavani.dev)",
 	"contributors": [
 		{
@@ -14,14 +14,11 @@
 			"url": "https://maklavani.dev"
 		}
 	],
-	"scripts": {
-		"dev": "nodemon src/index.ts",
-		"build": "npm run remove && tsc --build tsconfig.json",
-		"remove": "ts-node scripts/remove.mjs"
-	},
 	"license": "MIT",
 	"keywords": [
 		"mui",
+		"mui-x",
+		"date-pickers",
 		"jalali",
 		"jalalix",
 		"persian",
@@ -29,7 +26,8 @@
 		"khorshidi",
 		"calendar",
 		"date",
-		"typescript"
+		"typescript",
+		"react"
 	],
 	"repository": {
 		"type": "git",
@@ -45,21 +43,54 @@
 		"url": "https://github.com/jalalix/mui/issues"
 	},
 	"homepage": "https://jalalix.com",
+	"scripts": {
+		"dev": "nodemon --exec \"node --experimental-strip-types\" src/index.ts",
+		"build": "npm run remove && tsc -p tsconfig.json",
+		"remove": "node scripts/remove.mjs",
+		"prepublishOnly": "npm run build"
+	},
+	"dependencies": {
+		"@jalalix/typescript": "^0.8.0"
+	},
+	"peerDependencies": {
+		"@mui/x-date-pickers": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0",
+		"react": "^17.0.0 || ^18.0.0 || ^19.0.0"
+	},
+	"peerDependenciesMeta": {
+		"react": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@mui/x-date-pickers": "^9.18.0",
+		"@types/react": "^19.0.0",
+		"nodemon": "^3.1.14",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"rimraf": "^6.1.4",
+		"typescript": "^7.0.2"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"require": "./index.js",
+			"import": "./index.js",
+			"default": "./index.js"
+		}
+	},
+	"sideEffects": false,
 	"files": [
+		"AdapterJalaliX.d.ts",
+		"AdapterJalaliX.js",
 		"index.d.ts",
 		"index.js",
 		"index.types.d.ts",
 		"index.types.js",
 		"LICENSE",
-		"README.md"
-	],
-	"dependencies": {
-		"@jalalix/typescript": "^0.3.0"
-	},
-	"devDependencies": {
-		"nodemon": "^3.1.10",
-		"rimraf": "^6.0.1",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.8.3"
-	}
+		"README.md",
+		"CHANGELOG.md"
+	]
 }
