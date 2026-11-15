@@ -1,4 +1,4 @@
-# JalaliX
+# JalaliX - MUI
 
 Jalali (Persian/Shamsi) adapter for [MUI X Date Pickers](https://mui.com/x/react-date-pickers/), powered by [`@jalalix/typescript`](https://www.npmjs.com/package/@jalalix/typescript).
 
@@ -53,8 +53,8 @@ import { AdapterJalaliX, JalaliX } from '@jalalix/mui'
 import type { JalaliDate, JalaliOptions, JalaliFormatOptions } from '@jalalix/mui'
 ```
 
-- `AdapterJalaliX` — `MuiPickersAdapter` implementation (`lib: 'jalalix'`)
-- `JalaliX` — re-export of `@jalalix/typescript`
+- `AdapterJalaliX` - `MuiPickersAdapter` implementation (`lib: 'jalalix'`)
+- `JalaliX` - re-export of `@jalalix/typescript`
 
 ## License
 

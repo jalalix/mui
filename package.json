@@ -50,7 +50,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@jalalix/typescript": "^0.8.0"
+		"@jalalix/typescript": "^0.9.0"
 	},
 	"peerDependencies": {
 		"@mui/x-date-pickers": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0",

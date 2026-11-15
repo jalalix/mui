@@ -1,6 +1,8 @@
 # Release Notes
 All notable changes to this package will be documented in this file.
 
+- Update README branding to JalaliX - MUI and bump golden parity to `@jalalix/typescript` 0.9.0
+
 ## 0.2.0
 - Support `@mui/x-date-pickers` **v9** (peer range: ^6 || ^7 || ^8 || ^9)
 - Dev/types aligned with latest MUI X Date Pickers adapter interface

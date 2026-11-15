@@ -104,7 +104,7 @@ declare module '@mui/x-date-pickers/models' {
  * ```
  */
 export class AdapterJalaliX implements MuiPickersAdapter {
-	// Always `true` — marks this as an MUI X date adapter.
+	// Always `true` - marks this as an MUI X date adapter.
 	public isMUIAdapter = true
 
 	// Adapter supports MUI timezone APIs (`date`, `setTimezone`, etc.).
