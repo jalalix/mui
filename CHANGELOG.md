@@ -1,6 +1,7 @@
 # Release Notes
 All notable changes to this package will be documented in this file.
 
+## 0.2.1
 - Update README branding to JalaliX - MUI and bump golden parity to `@jalalix/typescript` 0.9.0
 
 ## 0.2.0
